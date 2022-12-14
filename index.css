@@ -4,34 +4,141 @@
 }
 
 .navbar {
-    background-color: aqua;
+    background-color: cadetblue;
     text-align: left;
 }
 
 .navbar img {
     margin-right: .75rem;
+    box-shadow: 2px 1px 1px black;
+}
+
+.container-fluid span {
+    text-rendering: auto;
+    text-align: center;
+    text-shadow: 3px 2px 2px gray;
+    font-size: 24px;
+    font-size: large;
+    margin: 0px;
+    font-optical-sizing: auto;
 }
 
 .navbar-nav {
     margin-left: 2rem;
+
 }
 
 #jumbotron {
-    height: 450px;
+    background-color: cadetblue;
+    padding-top: 25px;
+
 }
 
-#blog {
-    height: 450px;
+.jumbotron img {
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px black;
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+
+.jumbo-text {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.jumbo-text-left {
+    text-align: right;
+    font-size: large;
+    font-weight: bold;
+    color: chocolate;
+    margin-right: 5px;
+}
+
+.jumbo-text-right {
+    vertical-align: 0vmax;
+    text-align: justify;
+    font-size: medium;
+    color: black;
+    margin-left: 10px;
+    max-height: max-content;
+}
+
+.blog-card {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 5px;
+    position: center;
+}
+
+.card {
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: beige;
+    box-shadow: 7px 5px 5px gray;
+    width: 300px;
+    height: 400px;
+    background-color: antiquewhite;
+    margin-left: 1rem;
+}
+
+.card-header {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-header img {
+    max-width: fit-content;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 7px;
+}
+
+@media (max-width:980px) {
+    .blog-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:660px) {
+    .blog-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width:320px) and (max-width: 425px) {
-    .jumbotron {
-        background-color: red;
+    .jumbo-text-left {
+        font-size: 12px;
     }
+
+    .jumbo-text-right {
+        font-size: 10px;
+    }
+
 
     footer {
         grid-area: footer;
         background-color: black;
         min-height: 100px;
+    }
+
+    .blog-card {
+        display: grid;
+        grid-template-columns: 1fr;
+
     }
 }

@@ -13,10 +13,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm ">
+        <nav class="navbar sticky-top navbar-expand-sm ">
             <div class="container-fluid">
-                <img src="Assets/images/Logo.png" width="45" height="45"> Servicios <br>Informáticos</img>
-                 
+                <img src="Assets/Images/logo-aa.png" width="55" height="55"><span>A&A<br>Servicios
+                    Informáticos</span></img>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,10 +28,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#jumbotron">Quienes somos</a>
+                            <a class="nav-link" href="#jumbotron">Conocenos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#blog">Galeria</a>
+                            <a class="nav-link" href="#blog">¿Qué hacemos?</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#adicionales">Contactanos</a>
@@ -43,10 +44,18 @@
     </header>
     <section class="jumbotron-container" id="jumbotron">
         <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to featured content or information.</p>
-            <hr class="my-4">
+            <div class="jumbo-text">
+                <div class="jumbo-text-left">
+                    <p>Nuestro propósito es ayudar a transformar los negocios</p>
+                </div>
+                <div class="jumbo-text-right">
+                    <p>Ayudamos a diferentes organizaciones a transformar su negocio, poniendo a su
+                        disposición nuestra experiencia y compromiso, contribuyendo a resolver desafíos estratégicos con
+                        tecnología.</p>
+                </div>
+
+            </div>
+            <img src="Assets/Images/jumbotron-1.png" alt="">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
             <p class="lead">
                 <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
@@ -54,7 +63,32 @@
         </div>
     </section>
     <section class="blog" id="blog">
-        blog
+        <div class="blog-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="Assets/Images/redes.jpg" width="100%" alt="">
+                </div>
+                <div class="card-body">
+                    <p>texto de la tarjeta</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="Assets/Images/conectividad.jpg" width="100%" alt="">
+                </div>
+                <div class="card-body">
+                    <p>texto de la tarjeta</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="Assets/Images/redes.jpg" width="100%" alt="">
+                </div>
+                <div class="card-body">
+                    <p>texto de la tarjeta</p>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 <footer class="footer">
