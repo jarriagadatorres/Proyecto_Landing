@@ -4,15 +4,17 @@
 }
 
 .navbar {
-    background-color: cadetblue;
-    text-align: left;
+    background-color: #077187;
+    text-align: right;
+    
 }
 
 .navbar img {
     margin-right: .75rem;
-    box-shadow: 2px 1px 1px black;
 }
-
+.container-fluid ul{
+    text-align: right;
+}
 .container-fluid span {
     text-rendering: auto;
     text-align: center;
@@ -25,7 +27,7 @@
 
 .navbar-nav {
     margin-left: 2rem;
-
+    text-align: right;
 }
 
 #jumbotron {
@@ -33,13 +35,15 @@
     padding-top: 25px;
 
 }
-
+.carrusel p{
+    text-align: center;
+}
 .jumbotron img {
     align-content: center;
     border-radius: 10px;
     box-shadow: 2px 1px 1px black;
-    width: 90%;
-    margin-left: 5%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 
@@ -47,43 +51,47 @@
 .jumbo-text {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 9%;
+    padding-right: 9%;
+    vertical-align: center;
 }
 
 .jumbo-text-left {
     text-align: right;
-    font-size: large;
+    font-size: xx-large;
     font-weight: bold;
     color: chocolate;
-    margin-right: 5px;
 }
 
 .jumbo-text-right {
-    vertical-align: 0vmax;
-    text-align: justify;
-    font-size: medium;
+    font-size: large;
     color: black;
-    margin-left: 10px;
-    max-height: max-content;
+    max-width: 90%;
+    margin:  auto;
 }
 
+.blog h1{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 20px;
+    }
+
 .blog-card {
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    gap: 5px;
-    position: center;
+    gap: 20px;
 }
+
 
 .card {
     border-radius: 10px;
     border: 2px solid;
     border-color: beige;
     box-shadow: 7px 5px 5px gray;
-    width: 300px;
-    height: 400px;
+    width: 320px;
+    height: auto;
     background-color: antiquewhite;
-    margin-left: 1rem;
 }
 
 .card-header {
@@ -92,13 +100,25 @@
 }
 
 .card-header img {
-    max-width: fit-content;
     padding: 0px;
     margin: 0px;
+    min-width: 318px;
+    height: 200px;
     border-radius: 7px;
 }
 
-@media (max-width:980px) {
+.card-body h4{
+    margin-bottom: 10px;
+    font-weight: bold ;
+}
+
+.carrusel .lead{
+    padding-bottom: 20px;
+}
+
+/* Configuración para Tablet*/
+
+@media (max-width:1024px) {
     .blog-card {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -107,9 +127,24 @@
     .card {
         margin-bottom: 20px;
     }
+    .jumbo-text-right {
+        font-size: medium;
+
+    }    
+    .jumbo-text-left {
+        font-size: x-large;
+    }
+    .jumbotron img {
+        align-content: center;
+        border-radius: 10px;
+        box-shadow: 2px 1px 1px black;
+        width: 90%;
+        margin-left: 5%;
+    }
+
 }
 
-@media (max-width:660px) {
+@media (max-width:760px) {
     .blog-card {
         display: grid;
         grid-template-columns: 1fr;
@@ -118,7 +153,15 @@
     .card {
         margin-bottom: 20px;
     }
+    .jumbo-text-right {
+        font-size: small;
+
+    }    
+    .jumbo-text-left {
+        font-size: large;
+    }
 }
+/* Configuración para Celular*/
 
 @media (min-width:320px) and (max-width: 425px) {
     .jumbo-text-left {
