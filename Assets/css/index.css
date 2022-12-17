@@ -1,34 +1,359 @@
-*{  
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
 }
 
-.main-container{    
+.navbar {
+    background-color: #077187;
+    text-align: right;
 
 }
-.nav a{
-    margin: 1rem;
-    text-transform:uppercase;
+
+.collapse a:hover{
+    color: white;
 }
-.nav a img{ 
-    width: 1rem;
-    height: 1rem;
-
- }
-
-
-.jumbotron{
-background-color: #074f57;
+.navbar img {
+    margin-right: .75rem;
 }
 
-.blog{
-background-color: #077187 ;
+.container-fluid ul {
+    text-align: right;
 }
 
-.otros{
-background-color: #74a57f;
+.container-fluid span {
+    text-rendering: auto;
+    text-align: center;
+    text-shadow: 3px 2px 2px gray;
+    font-size: 24px;
+    font-size: large;
+    margin: 0px;
+    font-optical-sizing: auto;
 }
-.footer{
-    height: 20rem;
+
+.navbar-nav {
+    margin-left: 2rem;
+    text-align: right;
+}
+
+
+#jumbotron {
+    background-color: cadetblue;
+    padding-top: 80px;
+
+}
+
+.carrusel p {
+    text-align: center;
+}
+
+.jumbotron img {
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px black;
+    width: 80%;
+    margin-left: 10%;
+}
+
+ .carrusel a{
+    margin: 20px ;
+}
+.carrusel .btn{
+    background-color: chocolate;
+    color: black;
+    border-color: chocolate;
+    
+}
+.carrusel .btn:hover {
+    background-color: chocolate;
+    color: black;
+    border-color: chocolate;
+}
+
+.jumbo-text {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-left: 9%;
+    padding-right: 9%;
+    vertical-align: center;
+}
+
+.jumbo-text-left {
+    text-align: right;
+    font-size: xx-large;
+    font-weight: bold;
+    color: chocolate;
+}
+
+.jumbo-text-right {
+    font-size: large;
+    color: black;
+    max-width: 90%;
+    margin: auto;
+}
+
+.blog h1 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px ;
+    padding-bottom: 30px;
+}
+.blog-card {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.card {
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: beige;
+    box-shadow: 7px 5px 5px gray;
+    width: 320px;
+    height: auto;
+    background-color: antiquewhite;
+}
+.card-header {
+    padding: 0px;
+    margin: 0px;
+}
+.card-header img {
+    padding: 0px;
+    margin: 0px;
+    min-width: 318px;
+    height: 200px;
+    border-radius: 7px;
+}
+.card-body h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.carrusel .lead {
+    padding-bottom: 20px;
+}
+
+footer {
+    grid-area: footer;
     background-color: black;
 }
+
+/* Configuración para Tablet*/
+
+@media (max-width:1024px) {
+    .blog-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .jumbo-text-right {
+        font-size: medium;
+
+    }
+    .jumbo-text-left {
+        font-size: x-large;
+    }
+    .jumbotron img {
+        align-content: center;
+        border-radius: 10px;
+        box-shadow: 2px 1px 1px black;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+
+}
+
+@media (max-width:767px) {
+    .blog-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .jumbo-text-right {
+        font-size: small;
+
+    }
+    .jumbo-text-left {
+        font-size: large;
+    }
+    .site-footer {
+        padding-bottom: 0
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+/* Configuración para Celular*/
+
+@media (min-width:320px) and (max-width: 425px) {
+    .jumbo-text-left {
+        font-size: 12px;
+    }
+
+    .jumbo-text-right {
+        font-size: 10px;
+    }
+    .blog-card {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+}
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
